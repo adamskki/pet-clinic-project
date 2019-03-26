@@ -3,9 +3,11 @@ package adams.springframework.petclinicproject.model.services.map;
 import adams.springframework.petclinicproject.model.model.Owner;
 import adams.springframework.petclinicproject.model.services.CrudService;
 import adams.springframework.petclinicproject.model.services.OwnerService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService{
 
     @Override
